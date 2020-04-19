@@ -18,11 +18,11 @@ export const MyStack = () => {
         headerTintColor: 'white',
         headerStyle: {backgroundColor: 'tomato'},
       }}>
-      <MyRootStack.Screen
-        name="Home"
-        component={MyTabs}
-        options={{title: ''}}
-      />
+      {/*      <MyRootStack.Screen name="Home" component={MyTabs} />  for include tabnavigator*/}
+      <MyRootStack.Screen name="Home" component={HomeScreen} />
+      <MyRootStack.Screen name="Details" component={DetailsScreen} />
+      <MyRootStack.Screen name="Profile" component={ProfileScreen} />
+      <MyRootStack.Screen name="Settings" component={SettingsScreen} />
     </MyRootStack.Navigator>
   );
 };

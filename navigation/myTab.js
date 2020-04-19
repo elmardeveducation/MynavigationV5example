@@ -12,7 +12,11 @@ const Tab = createMaterialTopTabNavigator();
 export const MyTabs = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{title: 'TEST'}}
+      />
       <Tab.Screen name="Details" component={DetailsScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
