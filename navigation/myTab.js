@@ -6,16 +6,17 @@ import {
   ProfileScreen,
   SettingsScreen,
 } from '../screens/HomeScreen';
+import {MyDrawerNav} from './MyDrawer'
 
 const Tab = createMaterialTopTabNavigator();
 
 export const MyTabs = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator tabBarOptions={{activeTintColor: 'red', activeBackgroundColor:'#987226' }} >
       <Tab.Screen
         name="Home"
         component={HomeScreen}
-        options={{title: 'TEST'}}
+        
       />
       <Tab.Screen name="Details" component={DetailsScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
